@@ -5,7 +5,7 @@ export type ButtonType = "default" | "danger" | "ghost" | "secondary";
 
 export type ComponentSize = "default" | "large" | "small";
 
-interface BaseButtonProps {
+export interface BaseButtonProps {
     type?: ButtonType;
     icon?: ElementType;
     size?: ComponentSize;
@@ -36,7 +36,6 @@ export type ButtonProps = HTMLButtonProps & HTMLAnchorProps & CustomNodeProps;
 const ButtonTemp: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props: ButtonProps, ref: ForwardedRef<unknown>) => {
     const {
         type = "default",
-        icon,
         size = "default",
         className = "",
         children,

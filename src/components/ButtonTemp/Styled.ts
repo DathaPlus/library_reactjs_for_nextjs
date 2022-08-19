@@ -36,6 +36,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     /* Add margin in case of loading or icon */
     & > *:nth-child(1) {
         margin-left: ${pr => pr.withText ? 7 : 0}px;

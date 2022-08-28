@@ -24,3 +24,4 @@ yarn-error.log*
 /lib/
 /.npmrc_original
 /dist/
+.idea

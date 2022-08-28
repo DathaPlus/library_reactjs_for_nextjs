@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# starter kit design system
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is developed with love by the Datha+ team, it contains all the components to build websites with Design System
 
-## Available Scripts
+***
 
-In the project directory, you can run:
+## Run local
 
-### `npm start`
+`npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+***
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Publish
 
-### `npm test`
+`npm publish`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+***
 
-### `npm run build`
+## Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [Storybook](https://storybook.js.org/) - Storybook is an open source tool for building UI components and pages in isolation. It streamlines UI development, testing, and documentation.
+* [Create React App](https://github.com/facebook/create-react-app) - A JavaScript library for building user interfaces
+* [Rollup.js](https://rollupjs.org/) - Library to package projects
+* [Styled Components](https://styled-components.com/) - Use the best bits of ES6 and CSS to style your apps without stress
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+***
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Authors
+* **Datha+ Dev Team**
+* **Daniel Loza** - *Initial work* - [github](https://github.com/danidaniel6462)
 
-### `npm run eject`
+## Acknowledgments
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> "*To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel, that is the purpose of life*". - The Secret Life of Walter Mitty.
+>
+> Ver el mundo, afrontar peligros, traspasar muros, acercarse a los demás, encontrarse y sentir, es el propósito de la vida

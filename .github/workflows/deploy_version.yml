@@ -37,7 +37,7 @@ jobs:
           printf "registry=https://$NPM_REGISTRY\n//$NPM_REGISTRY:_authToken=$NPM_REGISTRY_TOKEN\nalways-auth=true" >> .npmrc
           | cat .npmrc
       - name: npm install
-        run: npm ci
+        run: npm i
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:

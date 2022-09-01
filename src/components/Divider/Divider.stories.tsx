@@ -1,9 +1,9 @@
-import { Divider } from './Styled';
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React from 'react';
+import * as React from "react";
+import { Divider } from "./Styled";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
-  title: 'Components/Divider',
+  title: "Components/Divider",
   component: Divider,
 } as ComponentMeta<typeof Divider>;
 
@@ -16,4 +16,3 @@ export const Default: ComponentStory<typeof Divider> = (_args) => (
 );
 
 export const Simple: ComponentStory<typeof Divider> = (_args) => <Divider />;
-

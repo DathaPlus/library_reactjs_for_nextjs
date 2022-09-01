@@ -1,0 +1,39 @@
+name: Datha+ pull-request deploy package
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - release/*
+env:
+  NPM_REGISTRY: ${{ secrets.NPM_REGISTRY }}
+  NPM_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
+
+jobs:
+  git-event:
+    name: Print git environment
+    runs-on: ubuntu-20.04
+    steps:
+      - name: git-event
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Printenv
+        run: printenv
+  publish:
+    needs: [git-event]
+    name: Run unit tests
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: registry npm add file
+        run:
+          printf "registry=https://$NPM_REGISTRY\n//$NPM_REGISTRY:_authToken=$NPM_REGISTRY_TOKEN\nalways-auth=true" >> .npmrc
+          | cat .npmrc
+      - name: npm ci
+        run: npm ci
+      - name: publish
+        run: npm publish

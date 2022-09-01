@@ -23,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 /lib/
 /.npmrc_original
+/.npmrc
 /dist/
 .idea

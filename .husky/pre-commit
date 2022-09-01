@@ -1,0 +1,15 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+green='\e[1;32m'
+cyan='\e[1;36m'
+resetColor='\e[0m'
+
+printf "$green-------- Start Run Validate ---------$resetColor" + '\n'
+npm run format
+printf "$green-------- End Run Validate ---------$resetColor" + '\n'
+
+git add -A .
+printf "\n \n $cyan-------- Complete :) --------->$resetColor" + '\n \n'
+echo ""
+echo "\n"

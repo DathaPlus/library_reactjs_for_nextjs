@@ -25,7 +25,7 @@ jobs:
         run: printenv
   publish:
     needs: [git-event]
-    name: Run unit tests
+    name: publish pkg and static storybook
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2

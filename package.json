@@ -18,7 +18,7 @@
     "build": "tsc --build \"./tsconfig.json\"",
     "build-storybook": "build-storybook -s public",
     "clean": "rm -rf ./dist",
-    "compile-icons": "@svgr/cli -d src/icons src/icons --typescript",
+    "compile-icons": "npx @svgr/cli -d src/icons src/icons --typescript",
     "copy-fonts": "copyfiles --up 1 src/config/fonts/* dist/",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{tsx,ts,js,json,yml,yaml}\" \"./.{lintstagedrc,nycrc,prettierrc}\"",

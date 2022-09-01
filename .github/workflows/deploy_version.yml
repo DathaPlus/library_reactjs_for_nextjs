@@ -8,6 +8,9 @@ on:
 env:
   NPM_REGISTRY: ${{ secrets.NPM_REGISTRY }}
   NPM_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  S3_BUCKET: s3://dathaplus-starter-kit-design-system/
 
 jobs:
   git-event:
@@ -35,5 +38,16 @@ jobs:
           | cat .npmrc
       - name: npm ci
         run: npm ci
-      - name: publish
+      - name: publish package to npm
         run: npm publish
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ${{ env.REGION }}
+          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
+      - name: build storybook
+        run: npm run build-storybook
+      - name: publish static to s3
+        run: |
+          aws s3 sync ./storybook-static ${{ env.S3_BUCKET }}

@@ -33,4 +33,4 @@ This project is developed with love by the Datha+ team, it contains all the comp
 
 > "*To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel, that is the purpose of life*". - The Secret Life of Walter Mitty.
 >
-> Ver el mundo, afrontar peligros, traspasar muros, acercarse a los demás, encontrarse y sentir, es el propósito de la vida
+> "*Ver el mundo, afrontar peligros, traspasar muros, acercarse a los demás, encontrarse y sentir, es el propósito de la vida*"

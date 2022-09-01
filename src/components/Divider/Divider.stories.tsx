@@ -9,9 +9,10 @@ export default {
 
 export const Default: ComponentStory<typeof Divider> = (_args) => (
   <>
-    <p>antes del divider?</p>
+    <h1>es una simple línea personalizada como divisor de contenidos</h1>
+    <p>antes del divider</p>
     <Divider />
-    <p>después del divider :)</p>
+    <p>después del divider</p>
   </>
 );
 

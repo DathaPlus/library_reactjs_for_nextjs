@@ -21,3 +21,5 @@ tsconfig.spec.json
 /.next/
 /.idea/
 .env
+/storybook-static/
+

@@ -17,16 +17,8 @@ export const StyledButtonComponent = styled.a<IButtonStyled>`
   box-shadow: 0 2px 3px 0 rgb(11 39 57 / 30%);
   text-align: center;
   text-decoration: none;
-  background: ${({ theme, color }: IButtonStyled) => {
-    console.log("color => ", color);
-    console.log("color => ", theme.palette);
-
-    return get(
-      theme,
-      `palette.${color}.main`,
-      defaultTheme.palette[color]?.main
-    );
-  }};
+  background: ${({ theme, color }: IButtonStyled) =>
+    get(theme, `palette.${color}.main`, defaultTheme.palette[color]?.main)};
   color: ${({ theme, color }: IButtonStyled) =>
     get(theme, `textColor.${color}.main`, defaultTheme.textColor[color]?.main)};
   cursor: pointer;
